@@ -14,6 +14,7 @@ Script to download a HF Model and Upload it to Torrent
 mkdir data
 cd ./data
 git lfs install
+huggingface-cli lfs-enable-largefiles .
 git clone https://huggingface.co/gpt2
 ```
 
