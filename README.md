@@ -1,6 +1,10 @@
 # from-hf-to-torrent
 Script to download a HF Model and Upload it to Torrent
 
+## Open Firewall if you are on a Mac
+
+- https://github.com/transmission/transmission/blob/main/docs/Port-Forwarding-Guide.md#open-your-local-firewall
+
 ## Available Libraries
 
 - https://github.com/idlesign/torrentool
