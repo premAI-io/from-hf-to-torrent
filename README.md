@@ -34,3 +34,13 @@ absolute_data_path = "/home/filippo/from-hf-to-torrent/data" # absolute path whe
 ```bash
 python main.py
 ```
+
+#### Some Links of Projects
+
+- https://aria2.github.io/
+- https://github.com/Elyah2035/llama-dl#how-do-i-know-this-is-safe
+- https://reddit.com/r/LocalLLaMA/s/et7M4h5uw7
+- https://pypi.org/project/transmission-rpc/
+- https://pypi.org/project/torrentool/
+- https://github.com/idlesign/torrentool
+- https://github.com/rndusr/torf
