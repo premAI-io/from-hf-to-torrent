@@ -7,9 +7,13 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Etc/UTC
+      - USER=prem
+      - FILE__PASS=/transmission_password
     volumes:
       - data-config:/config
-      - data-downloads:/downloads
+      - /mnt/HC_Volume_37156271/from-hf-to-torrent/data:/downloads
+      - /mnt/HC_Volume_37156271/from-hf-to-torrent/torrents:/torrents
+      - /mnt/HC_Volume_37156271/from-hf-to-torrent/.client_password:/transmission_password
       - data-watch:/watch
     ports:
       - 9091:9091
@@ -19,5 +23,4 @@ services:
 
 volumes:
   data-config:
-  data-downloads:
   data-watch:
