@@ -11,10 +11,10 @@ services:
       - FILE__PASS=/transmission_password
     volumes:
       - data-config:/config
-      - /mnt/HC_Volume_37156271/from-hf-to-torrent/data:/downloads
-      - /mnt/HC_Volume_37156271/from-hf-to-torrent/torrents:/torrents
-      - /mnt/HC_Volume_37156271/from-hf-to-torrent/.client_password:/transmission_password
+      - data-models:/downloads
+      - data-torrents:/torrents
       - data-watch:/watch
+      - /mnt/HC_Volume_37156271/from-hf-to-torrent/.client_password:/transmission_password
     ports:
       - 9091:9091
       - 51413:51413
@@ -24,3 +24,15 @@ services:
 volumes:
   data-config:
   data-watch:
+  data-models:
+    driver: local
+    driver_opts:
+      type: none
+      device: /mnt/HC_Volume_37156271/from-hf-to-torrent/data
+      o: bind
+  data-torrents:
+    driver: local
+    driver_opts:
+      type: none
+      device: /mnt/HC_Volume_37156271/from-hf-to-torrent/torrents
+      o: bind
