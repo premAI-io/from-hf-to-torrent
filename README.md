@@ -5,6 +5,7 @@ We are already hosting and seeding the following models:
 
 - <details><summary><a href="https://huggingface.co/premai-io/CodeLlama-34b-Instruct-hf">premai-io/CodeLlama-34b-Instruct-hf</a></summary>
     <p>
+
     Magnet URI:
 
     ```
@@ -15,6 +16,7 @@ We are already hosting and seeding the following models:
 
 - <details><summary><a href="https://huggingface.co/petals-team/StableBeluga2">petals-team/StableBeluga2</a></summary>
     <p>
+    
     Magnet URI:
 
     ```
