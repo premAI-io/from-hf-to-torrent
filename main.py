@@ -11,7 +11,7 @@ BEST_TRACKERS_URL = (
 )
 BEST_TRACKERS = [s for s in requests.get(BEST_TRACKERS_URL).text.split("\n") if s]
 
-models = ["CodeLlama-34b-Instruct-hf", "StableBeluga2"]  #TODO: , "falcon-180B-chat"]
+models = ["CodeLlama-34b-Instruct-hf", "StableBeluga2"]  # TODO: , "falcon-180B-chat"]
 data_path = "./data/"
 torrents_dir = "./torrents/"
 
@@ -45,7 +45,12 @@ def create_torrent(
 
 
 def seed_torrent(model_name):
-    c = Client(host="localhost", port=9091)
+    c = Client(
+        host="localhost",
+        port=9091,
+        username=os.getenv("TRANSMISSION_USER"),
+        password=os.getenv("TRANSMISSION_PASS"),
+    )
     torrents = c.get_torrents()
     torrent_names = [t.name for t in torrents]
 
