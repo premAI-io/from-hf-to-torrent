@@ -1,8 +1,7 @@
 # from-hf-to-torrent
 Download a Huggingface Model and share as Torrent.
 
-We are already hosting and seeding the following models:
-
+All torrent files can be accessed under [`torrents`](./torrents/) directory and we are already hosting and seeding the following models:
 - <details><summary><a href="https://huggingface.co/premai-io/CodeLlama-34b-Instruct-hf">premai-io/CodeLlama-34b-Instruct-hf</a></summary>
     <p>
 
